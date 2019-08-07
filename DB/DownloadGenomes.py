@@ -1,3 +1,4 @@
+#download from accesion ids of the provided strains 
 from Bio import Entrez
 def singleEntry(singleID):   #the singleID is the accession number
     handle = Entrez.efetch(db='nucleotide',id=singleID, rettype = 'fasta', retmode= 'text')
